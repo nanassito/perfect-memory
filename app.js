@@ -12,7 +12,6 @@ app.configure(function(){
  * @param num index of the number we want in the fibonacci series
  */
 function fibonacci (num) {
-	console.log(num)
 	switch (num){
 		case 0:
 			return 0;
