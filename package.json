@@ -1,0 +1,9 @@
+{
+	"name": "fibonacci",
+	"description": "a service that take a number and return the fibonacci of this number.",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"express": "3.x"
+	}
+}
