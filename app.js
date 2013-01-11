@@ -26,10 +26,9 @@ function fibonacci (num) {
 }
 
 app.post('/fibonacci', function(req, res){
-	console.log("request fibonacci of "+req.body.number)
+	console.log(new Date() + " : request fibonacci of "+req.body.number)
 	var number = parseInt(req.body.number);
 	var fibo = fibonacci(number);
-	console.log("resultat : "+fibo);
 	res.send(200, fibo.toString());
 });
 
