@@ -32,5 +32,13 @@ app.post('/fibonacci', function(req, res){
 	res.send(200, fibo.toString());
 });
 
+
+app.get('/fibonacci/:number', function(req, res){
+	console.log(new Date() + " : request fibonacci of "+req.params.number)
+	var number = parseInt(req.params.number);
+	var fibo = fibonacci(number);
+	res.send(200, fibo.toString());
+});
+
 app.listen(3000);
 console.log('Listening on port 3000');
