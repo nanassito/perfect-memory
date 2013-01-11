@@ -25,13 +25,6 @@ function fibonacci (num) {
 	}
 }
 
-app.post('/fibonacci', function(req, res){
-	console.log(new Date() + " : request fibonacci of "+req.body.number)
-	var number = parseInt(req.body.number);
-	var fibo = fibonacci(number);
-	res.send(200, fibo.toString());
-});
-
 
 app.get('/fibonacci/:number', function(req, res){
 	console.log(new Date() + " : request fibonacci of "+req.params.number)
